@@ -1,4 +1,4 @@
-/* Osnovni reset */
+/* Reset osnovnih margina */
 body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
 header {
   background: url("images/header-bg.jpg") no-repeat center center;
   background-size: cover;
-  height: 200px;
+  height: 220px;
   position: relative;
   overflow: hidden;
 }
@@ -23,11 +23,11 @@ header {
 header h1 {
   position: absolute;
   white-space: nowrap;
-  font-size: 2em;
+  font-size: 2.2em;
   color: #fff;
   top: 50%;
   transform: translateY(-50%);
-  animation: scrollText 15s linear infinite;
+  animation: scrollText 18s linear infinite;
 }
 
 @keyframes scrollText {
