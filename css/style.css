@@ -1,0 +1,83 @@
+/* Osnovni reset */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lora', serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header sa pozadinskom slikom */
+header {
+  background: url("images/header-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animacija teksta */
+header h1 {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 2em;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  from { right: -100%; }
+  to { right: 100%; }
+}
+
+/* Navigacija */
+nav {
+  background-color: #5040ae;
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sekcije */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+section h2 {
+  color: #5040ae;
+  margin-bottom: 10px;
+}
+section p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #eee;
+  font-size: 0.9em;
+}
