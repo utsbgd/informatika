@@ -1,4 +1,4 @@
-/* u boji ver3 */
+/* Osnovni stil */
 body {
   font-family: 'Lora', serif;
   background-color: #f4f4f9;
@@ -51,9 +51,17 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
 }
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #3b2f8a;
+}
+nav ul li a.active {
+  color: #f1c40f; /* žuta */
+  background-color: rgba(255,255,255,0.1);
+  border-bottom: 2px solid #f1c40f;
 }
 
 /* Sekcije */
@@ -89,4 +97,18 @@ footer {
   background-color: #333;
   color: #eee;
   font-size: 0.9em;
+}
+
+/* Palete po oblastima */
+body.pocetna section { background-color: #ffffff; }
+body.uvod section { background-color: #eaf6ff; }       /* plava nijansa */
+body.hardware section { background-color: #eafaf1; }   /* zelena nijansa */
+body.text section { background-color: #fdecea; }       /* crvena nijansa */
+
+/* Ikonice za PDF i PPTX linkove */
+a.pdf-link::before {
+  content: "📄 ";
+}
+a.pptx-link::before {
+  content: "📊 ";
 }
