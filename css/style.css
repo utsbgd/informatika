@@ -103,7 +103,7 @@ footer {
 body.pocetna section { background-color: #ffffff; }
 body.uvod section { background-color: #eaf6ff; }       /* plava nijansa */
 body.hardware section { background-color: #eafaf1; }   /* zelena nijansa */
-body.text section { background-color: #fdecea; }       /* crvena nijansa */
+body.obrada-teksta section { background-color: #fdecea; }       /* crvena nijansa */
 
 /* Ikonice za PDF i PPTX linkove */
 a.pdf-link::before {
