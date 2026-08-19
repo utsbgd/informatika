@@ -24,7 +24,7 @@ body.hardware header {
   height: 220px;
   position: relative;
   overflow: hidden;
-  animation: moveBackground 36s ease-in-out infinite;
+  animation: moveBackground 48s ease-in-out infinite;
 }
 
 /* Animacija pomera pozadinu (sliku heardera u header-u) gore–sredina–dole */
