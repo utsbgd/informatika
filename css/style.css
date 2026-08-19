@@ -17,6 +17,24 @@ header {
   background-color: #2c3e50; /* fallback boja */
 }
 
+/* Header za oblast Hardver i softver, da bude slika a ne animacije */
+body.hardware header {
+  background: url("../images/hardware-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tekst u ovom headeru, za oblast Hardver i softver, ovde za hardver ukidamo animaciju */
+body.hardware header h1 {
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  animation: none; /* ovde ukidamo animaciju */
+  text-align: center;
+  width: 100%;
+}
+
 /* Animacija teksta */
 header h1 {
   position: absolute;
