@@ -24,6 +24,15 @@ body.hardware header {
   height: 220px;
   position: relative;
   overflow: hidden;
+  animation: moveBackground 30s ease-in-out infinite;
+}
+
+/* Animacija pomera pozadinu gore–sredina–dole */
+@keyframes moveBackground {
+  0%   { background-position: center bottom; }
+  33%  { background-position: center center; }
+  66%  { background-position: center top; }
+  100% { background-position: center bottom; }
 }
 
 /* Tekst u ovom headeru, za oblast Hardver i softver, ovde za hardver ukidamo animaciju */
