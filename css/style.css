@@ -23,7 +23,7 @@ body.uvod header {
   background-size: cover; /* rasteže sliku proporcionalno */
   height: 220px;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /* ako slika prelazi pozadinu da se taj deo slike ne vidi */
 }
 
 
