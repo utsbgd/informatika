@@ -9,7 +9,7 @@ body {
 
 /* Header sa pozadinskom slikom i tamnom pozadinom */
 header {
-  background: url("images/header-bg.jpg") no-repeat center center;
+  background: url("images/header-bg.jpeg") no-repeat center center;
   background-size: cover;
   height: 220px;
   position: relative;
@@ -17,6 +17,15 @@ header {
   background-color: #2c3e50; /* fallback boja */
 }
 
+/* Header za oblast Uvod – statična slika */
+body.uvod header {
+  background: url("../images/uvod-bg.jpg") no-repeat center center;
+  background-size: cover; /* rasteže sliku proporcionalno */
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+  
 /* Header za oblast Hardver i softver, da bude slika a ne animacije, traje 60s infinite */
 body.hardware header {
   background: url("../images/hardware-bg.jpg") no-repeat center center;
