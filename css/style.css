@@ -30,11 +30,8 @@ body.uvod header {
 /* Tekst u ovom headeru, za oblast Hardver i softver, ovde za hardver ukidamo animaciju */
 body.uvod header h1 {
   color: #fff;
-  text-shadow: /* crna linija oko slova */
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+text-shadow: 0 0 2px #000;
+
   /* text-shadow: 2px 2px 6px rgba(0,0,0,0.8); bilo */
   animation: none; /* ovde ukidamo animaciju */
   text-align: center;
