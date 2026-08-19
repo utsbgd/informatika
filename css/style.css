@@ -23,6 +23,7 @@ body.uvod header {
   background-size: cover; /* rasteže sliku proporcionalno */
   height: 220px;
   position: relative;
+  align-items: center;   /* vertikalno centriranje */
   overflow: hidden; /* ako slika prelazi pozadinu da se taj deo slike ne vidi */
 }
 
@@ -35,6 +36,7 @@ text-shadow: 0 0 2px #000;
   /* text-shadow: 2px 2px 6px rgba(0,0,0,0.8); bilo */
   animation: none; /* ovde ukidamo animaciju */
   text-align: center;
+  align-items: center;   /* vertikalno centriranje */
   width: 100%;
 }
 
