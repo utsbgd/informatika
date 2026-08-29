@@ -24,7 +24,7 @@ body.uvod header {
   height: 220px;
   position: relative;
   overflow: hidden;
-  animation: moveBackground 60s ease-in-out infinite;
+  animation: moveBackground 30s ease-in-out infinite;
 }
 
 
