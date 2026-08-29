@@ -23,8 +23,7 @@ body.uvod header {
   background-size: cover; /* rasteže sliku proporcionalno */
   height: 220px;
   position: relative;
-  align-items: center;   /* vertikalno centriranje */
-  overflow: hidden; /* ako slika prelazi pozadinu da se taj deo slike ne vidi */
+  overflow: hidden;
   animation: moveBackground 60s ease-in-out infinite;
 }
 
