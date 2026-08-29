@@ -18,13 +18,13 @@ header {
 }
 
 /* Razlikovanje samo po slici */
-body.pocetna header { background-image: url("images/header-bg.jpeg"); }
+body.pocetna header { background-image: url("images/uvod-bg.jpeg"); }
 body.uvod header { background-image: url("../images/uvod-bg.jpg"); }
 body.hardware header { background-image: url("../images/hardware-bg.jpg"); }
 body.obrada-teksta header { background-image: url("../images/obrada-bg.jpg"); }
-body.slide-prezentacije header { background-image: url("../images/slide-bg.jpg"); }
-body.tabelarne-kalkulacije header { background-image: url("../images/tabele-bg.jpg"); }
-body.vestacka-inteligencija header { background-image: url("../images/ai-bg.jpg"); }
+body.slajd-prezentacije header { background-image: url("../images/uvod-bg.jpg"); }
+body.tabelarne-kalkulacije header { background-image: url("../images/uvod-bg.jpg"); }
+body.vestacka-inteligencija header { background-image: url("../images/uvod-bg.jpg"); }
 
 /* Animacija pomera pozadinu gore–sredina–dole */
 @keyframes moveBackground {
@@ -116,7 +116,7 @@ body.pocetna section { background-color: #ffffff; }
 body.uvod section { background-color: #eaf6ff; }
 body.hardware section { background-color: #eafaf1; }
 body.obrada-teksta section { background-color: #fdecea; }
-body.slide-prezentacije section { background-color: #fffbe6; }
+body.slajd-prezentacije section { background-color: #fffbe6; }
 body.tabelarne-kalkulacije section { background-color: #e6f7ff; }
 body.vestacka-inteligencija section { background-color: #f0e6ff; }
 
