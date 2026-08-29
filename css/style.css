@@ -14,17 +14,17 @@ header {
   height: 220px;
   position: relative;
   overflow: hidden;
-  animation: moveBackground 30s ease-in-out infinite;
+  animation: moveBackground 20s ease-in-out infinite;
 }
 
 /* Razlikovanje samo po slici */
-body.pocetna header { background-image: url("images/header-bg.jpeg"); }
+body.pocetna header { background-image: url("images/uvod-bg.jpeg"); }
 body.uvod header { background-image: url("../images/uvod-bg.jpg"); }
 body.hardware header { background-image: url("../images/hardware-bg.jpg"); }
-body.obrada-teksta header { background-image: url("../images/obrada-bg.jpg"); }
-body.slide-prezentacije header { background-image: url("../images/slide-bg.jpg"); }
-body.tabelarne-kalkulacije header { background-image: url("../images/tabele-bg.jpg"); }
-body.vestacka-inteligencija header { background-image: url("../images/ai-bg.jpg"); }
+body.obrada-teksta header { background-image: url("../images/uvod-bg.jpg"); }
+body.slide-prezentacije header { background-image: url("../images/uvod-bg.jpg"); }
+body.tabelarne-kalkulacije header { background-image: url("../images/uvod-bg.jpg"); }
+body.vestacka-inteligencija header { background-image: url("../images/uvod-bg.jpg"); }
 /* Dodaj nove oblasti samo ovim redom: body.nova-oblast header { background-image: url("..."); } */
 
 /* Animacija pomera pozadinu gore–sredina–dole */
