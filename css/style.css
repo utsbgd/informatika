@@ -14,18 +14,17 @@ header {
   height: 220px;
   position: relative;
   overflow: hidden;
-  animation: moveBackground 20s ease-in-out infinite;
+  animation: moveBackground 30s ease-in-out infinite;
 }
 
 /* Razlikovanje samo po slici */
-body.pocetna header { background-image: url("images/uvod-bg.jpeg"); }
+body.pocetna header { background-image: url("images/header-bg.jpeg"); }
 body.uvod header { background-image: url("../images/uvod-bg.jpg"); }
 body.hardware header { background-image: url("../images/hardware-bg.jpg"); }
-body.obrada-teksta header { background-image: url("../images/uvod-bg.jpg"); }
-body.slajd-prezentacije header { background-image: url("../images/uvod-bg.jpg"); }
-body.tabelarne-kalkulacije header { background-image: url("../images/uvod-bg.jpg"); }
-body.vestacka-inteligencija header { background-image: url("../images/uvod-bg.jpg"); }
-/* Dodaj nove oblasti samo ovim redom: body.nova-oblast header { background-image: url("..."); } */
+body.obrada-teksta header { background-image: url("../images/obrada-bg.jpg"); }
+body.slide-prezentacije header { background-image: url("../images/slide-bg.jpg"); }
+body.tabelarne-kalkulacije header { background-image: url("../images/tabele-bg.jpg"); }
+body.vestacka-inteligencija header { background-image: url("../images/ai-bg.jpg"); }
 
 /* Animacija pomera pozadinu gore–sredina–dole */
 @keyframes moveBackground {
@@ -39,22 +38,12 @@ body.vestacka-inteligencija header { background-image: url("../images/uvod-bg.jp
 header h1 {
   position: absolute;
   font-size: 2.0em;
-  color: #fff;
+  color: #fff; /* bela slova umesto zlatnih */
   text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
   width: 100%;
-}
-
-/* Animacija teksta samo na početnoj */
-body.pocetna header h1 {
-  animation: scrollText 18s linear infinite;
-  color: #f1c40f; /* zlatna */
-}
-@keyframes scrollText {
-  from { right: -100%; }
-  to { right: 100%; }
 }
 
 /* Navigacija – meni */
@@ -124,12 +113,12 @@ footer {
 
 /* Palete po oblastima */
 body.pocetna section { background-color: #ffffff; }
-body.uvod section { background-color: #eaf6ff; }              /* plava nijansa */
-body.hardware section { background-color: #eafaf1; }          /* zelena nijansa */
-body.obrada-teksta section { background-color: #fdecea; }     /* crvena nijansa */
-body.slajd-prezentacije section { background-color: #fffbe6; }/* žuta nijansa */
-body.tabelarne-kalkulacije section { background-color: #e6f7ff; } /* svetlo plava */
-body.vestacka-inteligencija section { background-color: #f0e6ff; } /* ljubičasta */
+body.uvod section { background-color: #eaf6ff; }
+body.hardware section { background-color: #eafaf1; }
+body.obrada-teksta section { background-color: #fdecea; }
+body.slide-prezentacije section { background-color: #fffbe6; }
+body.tabelarne-kalkulacije section { background-color: #e6f7ff; }
+body.vestacka-inteligencija section { background-color: #f0e6ff; }
 
 /* Ikonice za PDF i PPTX linkove */
 a.pdf-link::before { content: "📄 "; }
