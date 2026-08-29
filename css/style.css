@@ -22,7 +22,7 @@ body.pocetna header { background-image: url("images/uvod-bg.jpeg"); }
 body.uvod header { background-image: url("../images/uvod-bg.jpg"); }
 body.hardware header { background-image: url("../images/hardware-bg.jpg"); }
 body.obrada-teksta header { background-image: url("../images/uvod-bg.jpg"); }
-body.slide-prezentacije header { background-image: url("../images/uvod-bg.jpg"); }
+body.slajd-prezentacije header { background-image: url("../images/uvod-bg.jpg"); }
 body.tabelarne-kalkulacije header { background-image: url("../images/uvod-bg.jpg"); }
 body.vestacka-inteligencija header { background-image: url("../images/uvod-bg.jpg"); }
 /* Dodaj nove oblasti samo ovim redom: body.nova-oblast header { background-image: url("..."); } */
@@ -127,7 +127,7 @@ body.pocetna section { background-color: #ffffff; }
 body.uvod section { background-color: #eaf6ff; }              /* plava nijansa */
 body.hardware section { background-color: #eafaf1; }          /* zelena nijansa */
 body.obrada-teksta section { background-color: #fdecea; }     /* crvena nijansa */
-body.slide-prezentacije section { background-color: #fffbe6; }/* žuta nijansa */
+body.slajd-prezentacije section { background-color: #fffbe6; }/* žuta nijansa */
 body.tabelarne-kalkulacije section { background-color: #e6f7ff; } /* svetlo plava */
 body.vestacka-inteligencija section { background-color: #f0e6ff; } /* ljubičasta */
 
