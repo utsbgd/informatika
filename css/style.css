@@ -77,8 +77,8 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   text-align: center;
-  min-width: 100px;       /* manja minimalna širina */
-  padding: 6px 10px;      /* smanjen padding */
+  min-width: 80px;       /* manja minimalna širina */
+  padding: 4px 6px;      /* smanjen padding */
   font-size: clamp(0.95rem, 1.8vw, 1.1rem); /* manji font */
   color: #fff;
   text-decoration: none;
