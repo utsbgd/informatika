@@ -18,7 +18,7 @@ header {
 }
 
 /* Razlikovanje samo po slici */
-body.pocetna header { background-image: url("images/uvod-bg.jpeg"); }
+body.pocetna header { background-image: url("images/uvod-bg.jpg"); }
 body.uvod header { background-image: url("../images/uvod-bg.jpg"); }
 body.hardware header { background-image: url("../images/hardware-bg.jpg"); }
 body.obrada-teksta header { background-image: url("../images/uvod-bg.jpg"); }
