@@ -61,33 +61,28 @@ header p {
 }
 
 /* Navigacija – meni */
-nav {
-  background-color: #5040ae;
-  padding: 10px;
-}
-
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;        /* dozvoljava prelamanje u više redova */
+  flex-wrap: wrap;        /* dozvoljava prelamanje */
   justify-content: center;/* centriranje stavki */
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  margin: 5px 10px;       /* manji razmak da se bolje uklopi */
+  margin: 0 8px;          /* manji razmak između stavki */
 }
 
 nav ul li a {
-  display: inline-block;  /* pravougaonik */
-  text-align: center;     /* centriran tekst */
-  min-width: 120px;       /* minimalna širina */
-  padding: 8px 12px;
-  font-size: clamp(1rem, 2vw, 1.2rem); /* prilagodljiv font */
+  display: inline-block;
+  text-align: center;
+  min-width: 100px;       /* manja minimalna širina */
+  padding: 6px 10px;      /* smanjen padding */
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem); /* manji font */
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 4px;
   transition: background 0.3s, color 0.3s;
 }
@@ -105,17 +100,17 @@ nav ul li a.active {
 /* 📱 Mobilni prikaz */
 @media (max-width: 600px) {
   nav ul {
-    flex-direction: column;   /* stavke idu jedna ispod druge */
-    align-items: center;      /* centrirane */
+    flex-direction: column;
+    align-items: center;
   }
 
   nav ul li {
-    margin: 8px 0;
+    margin: 6px 0;
   }
 
   nav ul li a {
-    min-width: 200px;         /* širi pravougaonik na mobilnom */
-    font-size: 1.1rem;
+    min-width: 180px;
+    font-size: 1rem;
   }
 }
 
