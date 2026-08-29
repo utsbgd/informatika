@@ -10,12 +10,12 @@ body {
 /* Header – zajednički stil za sve oblasti */
 header {
   background-size: cover;
-  background-position: center top; /* pomera sliku da se vidi ceo gornji deo */
+  background-position: center top;
   height: 110px;
   position: relative;
   overflow: hidden;
   animation: moveBackground 5s ease-in-out infinite;
-  /* podesava se pozicija teksta koji je u hederu - naslov oblasti */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,15 +42,19 @@ body.vestacka-inteligencija header { background-image: url("../images/uvod-bg.jp
 
 /* Tekst u headeru – statičan svuda */
 header h1 {
-  position: absolute;
-  font-size: 1.0em;
-  color: #fff; /* bela slova umesto zlatnih */
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  line-height: 1.15;
+  color: #fff;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
-  top: 50%;
-  transform: translateY(-50%);
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+}
+
+header p {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 
 /* Navigacija – meni */
