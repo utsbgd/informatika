@@ -25,6 +25,7 @@ body.uvod header {
   position: relative;
   align-items: center;   /* vertikalno centriranje */
   overflow: hidden; /* ako slika prelazi pozadinu da se taj deo slike ne vidi */
+  animation: moveBackground 60s ease-in-out infinite;
 }
 
 
