@@ -65,29 +65,58 @@ nav {
   background-color: #5040ae;
   padding: 10px;
 }
+
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;        /* dozvoljava prelamanje u više redova */
+  justify-content: center;/* centriranje stavki */
+  margin: 0;
+  padding: 0;
 }
+
 nav ul li {
-  margin: 0 15px;
+  margin: 5px 10px;       /* manji razmak da se bolje uklopi */
 }
+
 nav ul li a {
+  display: inline-block;  /* pravougaonik */
+  text-align: center;     /* centriran tekst */
+  min-width: 120px;       /* minimalna širina */
+  padding: 8px 12px;
+  font-size: clamp(1rem, 2vw, 1.2rem); /* prilagodljiv font */
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  padding: 5px 10px;
   border-radius: 4px;
   transition: background 0.3s, color 0.3s;
 }
+
 nav ul li a:hover {
   background-color: #3b2f8a;
 }
+
 nav ul li a.active {
-  color: #f1c40f; /* žuta */
+  color: #f1c40f;
   background-color: rgba(255,255,255,0.1);
   border-bottom: 2px solid #f1c40f;
+}
+
+/* 📱 Mobilni prikaz */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;   /* stavke idu jedna ispod druge */
+    align-items: center;      /* centrirane */
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    min-width: 200px;         /* širi pravougaonik na mobilnom */
+    font-size: 1.1rem;
+  }
 }
 
 /* Sekcije */
