@@ -45,7 +45,7 @@ header h1 {
   margin: 0;
   font-size: clamp(1.6rem, 3vw, 2rem);
   line-height: 1.15;
-  color: #fff;
+  color: #fff; /* bela slova umesto zlatnih */
   text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 
