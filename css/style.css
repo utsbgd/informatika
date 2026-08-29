@@ -11,10 +11,16 @@ body {
 header {
   background-size: cover;
   background-position: center top; /* pomera sliku da se vidi ceo gornji deo */
-  height: 140px;
+  height: 110px;
   position: relative;
   overflow: hidden;
   animation: moveBackground 5s ease-in-out infinite;
+  /* podesava se pozicija teksta koji je u hederu - naslov oblasti */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* Razlikovanje samo po slici */
