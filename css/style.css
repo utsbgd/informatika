@@ -43,12 +43,13 @@ body.vestacka-inteligencija header { background-image: url("../images/uvod-bg.jp
 /* Tekst u headeru – statičan svuda */
 header h1 {
   position: absolute;
-  font-size: 2.0em;
+  font-size: 1.0em;
   color: #fff; /* bela slova umesto zlatnih */
   text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
   top: 50%;
   transform: translateY(-50%);
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
