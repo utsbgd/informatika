@@ -14,7 +14,7 @@ header {
   height: 220px;
   position: relative;
   overflow: hidden;
-  animation: moveBackground 15s ease-in-out infinite;
+  animation: moveBackground 5s ease-in-out infinite;
 }
 
 /* Razlikovanje samo po slici */
