@@ -195,3 +195,36 @@ body.vestacka-inteligencija section { background-color: #f0e6ff; }
 /* Ikonice za PDF i PPTX linkove */
 a.pdf-link::before { content: "📄 "; }
 a.pptx-link::before { content: "📊 "; }
+
+/* ovo je zbog prikaza PDF, link – podrazumevano skriven na računaru */
+#pdfMobileLink {
+  display: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#pdfMobileLink a {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #5040ae;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#pdfMobileLink a:hover {
+  background-color: #4c3eb2;
+}
+
+/* Mobilni prikaz PDF-a */
+@media (max-width: 600px) {
+  #pdfFrame {
+    display: none;
+  }
+
+  #pdfMobileLink {
+    display: block;
+  }
+} /* dovde je zbog prikaza PDF */
