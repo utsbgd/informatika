@@ -63,7 +63,7 @@ header p {
 /* Navigacija – meni */
 nav {
   background-color: #1e1947; /* Duboka tamno-ljubičasta baza koja povezuje meni sa vašim stilom */
-  padding: 10px 0;
+  padding: 9px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Blaga senka ispod celog menija */
 }
 
@@ -78,15 +78,15 @@ nav ul {
   margin: 0 auto;         /* Centrira sadržaj unutar nav-a */
 }
 
-nav ul li {
-  margin: 4px 8px;        /* Optimalan razmak */
+nav ul li {  
+  margin: 4px 3px; /* Smanjeno sa 8px na 3px sa leve i desne strane, ušteda po 10px između svake dve stavke menija. */
 }
 
 nav ul li a {
   display: inline-block;
   text-align: center;
-  min-width: 100px;       
-  padding: 8px 16px;      /* Malo komotniji padding za lakši klik (UX standard) */
+  min-width: 100px;  /* smanjio sa 100 na 85px, to je minimalna širina kutije */     
+  padding: 8px 10px;      /* 8px je gore-dole, a druga vrednost je levo-desno od teksta unutar stavke, sa 16px na 10px, svako dugme je postalo uže za 2*6=12px */
   font-size: clamp(0.9rem, 1.5vw, 1.05rem); 
   color: rgba(255, 255, 255, 0.75); /* Svetli, prigušeni tekst na tamnoj pozadini */
   text-decoration: none;
