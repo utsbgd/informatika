@@ -62,68 +62,67 @@ header p {
 
 /* Navigacija – meni */
 nav {
-  background-color: #ffffff; /* Čista bela pozadina menija */
-  padding: 12px 0;
-  border-bottom: 1px solid #e2e8f0; /* Suptilna, moderna linija koja odvaja meni od headera */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02); /* Skoro nevidljiva senka za dubinu */
+  background-color: #1e1947; /* Duboka tamno-ljubičasta baza koja povezuje meni sa vašim stilom */
+  padding: 10px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Blaga senka ispod celog menija */
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;        
-  justify-content: center;
+  flex-wrap: wrap;        /* dozvoljava prelamanje */
+  justify-content: center;/* centriranje stavki */
   margin: 0;
   padding: 0;
-  max-width: 1200px;      
-  margin: 0 auto;         
+  max-width: 1200px;      /* Ograničava širinu na velikim ekranima */
+  margin: 0 auto;         /* Centrira sadržaj unutar nav-a */
 }
 
 nav ul li {
-  margin: 4px 8px;        
+  margin: 4px 8px;        /* Optimalan razmak */
 }
 
 nav ul li a {
   display: inline-block;
   text-align: center;
   min-width: 100px;       
-  padding: 8px 16px;      
+  padding: 8px 16px;      /* Malo komotniji padding za lakši klik (UX standard) */
   font-size: clamp(0.9rem, 1.5vw, 1.05rem); 
-  color: #4a5568; /* Tamno siva boja (Anthracite) – prijatnija za oči od čiste crne */
+  color: rgba(255, 255, 255, 0.75); /* Svetli, prigušeni tekst na tamnoj pozadini */
   text-decoration: none;
-  font-weight: 500;       
-  border-radius: 6px;     
-  position: relative;     
-  /* Tranzicija za mekane i profesionalne prelaze boja */
-  transition: background-color 0.2s ease, color 0.2s ease; 
+  font-weight: 500;       /* Moderniji, čistiji izgled slova */
+  border-radius: 6px;     /* Prefinjeni zaobljeni uglovi */
+  position: relative;     /* Potrebno za pozicioniranje donje linije */
+  /* Profesionalna tranzicija: glatko menja boju pozadine i teksta */
+  transition: background-color 0.25s ease, color 0.25s ease; 
 }
 
 /* Efekat kada se na stavku menija pokaže mišem (Hover) */
 nav ul li a:hover {
-  background-color: #f3f0ff; /* Veoma nežna, pastelno-ljubičasta pozadina (uklapa se sa vašim h2) */
-  color: #4c3eb2;            /* Tekst prelazi u vašu prepoznatljivu ljubičastu boju */
+  background-color: #4c3eb2; /* Svetlija ljubičasta koju smo izabrali */
+  color: #ffffff;            /* Tekst postaje potpuno beo za maksimalan kontrast */
 }
 
 /* Aktivna stavka menija (Trenutna stranica) */
 nav ul li a.active {
-  color: #3b2f8a;            /* Vaša primarna tamno-ljubičasta boja */
-  background-color: #e8e3f9; /* Malo zasićenija pastelna pozadina za aktivno stanje */
-  font-weight: 600;          
+  color: #ffffff;            /* Tekst ostaje čisto beo */
+  background-color: rgba(255, 255, 255, 0.15); /* Prefinjena staklena pozadina */
+  font-weight: 600;          /* Blago podebljan tekst */
 }
 
-/* Donja akcentovana linija za aktivnu stavku */
+/* Donja akcentovana linija za aktivnu stavku – primer vrhunske prakse */
 nav ul li a.active::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 20%;                 
-  width: 60%;                
+  left: 15%;                 
+  width: 70%;                /* Linija ne ide od ivice do ivice, što izgleda elegantnije */
   height: 3px;
-  background-color: #3b2f8a; /* Umesto žute, sada koristimo vašu tamnu ljubičastu za bolji kontrast */
+  background-color: #f1c40f; /* Vaša žuta boja, sada kao jasan svetleći akcenat */
   border-radius: 3px 3px 0 0;
 }
 
-/* 📱 Mobilni prikaz (Prilagođen svetloj pozadini) */
+/* 📱 Mobilni prikaz (Prilagođen novoj tamnoj pozadini) */
 @media (max-width: 600px) {
   nav {
     padding: 5px 0;
@@ -136,21 +135,20 @@ nav ul li a.active::after {
 
   nav ul li {
     margin: 4px 0;
-    width: 90%;             
+    width: 90%;             /* Dugmad zauzimaju širinu ekrana na telefonu */
   }
 
   nav ul li a {
     display: block;
     min-width: 0;
-    padding: 10px;          
+    padding: 10px;          /* Veća površina za prst na telefonu */
   }
   
   nav ul li a.active::after {
-    left: 40%;
-    width: 20%;             
+    left: 35%;
+    width: 30%;             /* Kraća linija na mobilnom ekranu */
   }
 }
-Б
 
 /* Sekcije */
 section {
