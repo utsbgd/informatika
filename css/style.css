@@ -72,21 +72,20 @@ nav ul {
   display: flex;
   flex-wrap: wrap;        /* dozvoljava prelamanje */
   justify-content: center;/* centriranje stavki */
-  margin: 0;
   padding: 0;
   max-width: 1200px;      /* Ograničava širinu na velikim ekranima */
   margin: 0 auto;         /* Centrira sadržaj unutar nav-a */
 }
 
 nav ul li {  
-  margin: 4px 3px; /* kada se smanji 3px za 1px tada se smanji 1px*2 između svake dve stavke menija itd. */
+  margin: 4px 3px; /* 4px gore/dole, 3px levo/desno */
 }
 
 nav ul li a {
   display: inline-block;
   text-align: center;
   min-width: 85px;  /* to je minimalna širina dugmeta */     
-  padding: 8px 10px;      /* 8px je gore-dole, a 10px je levo-desno od teksta unutar stavke, ako smanjim 1px tada je uže za 2*1px */
+  padding: 8px 10px;      /* 8px gore/dole, 10px levo/desno; promena za 1px menja širinu za 2px */
   font-size: clamp(0.9rem, 1.5vw, 1.05rem); 
   color: rgba(255, 255, 255, 0.75); /* Svetli, prigušeni tekst na tamnoj pozadini */
   text-decoration: none;
