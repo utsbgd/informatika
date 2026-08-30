@@ -85,7 +85,7 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   text-align: center;
-  min-width: 100px;  /* smanjio sa 100 na 85px, to je minimalna širina kutije */     
+  min-width: 85px;  /* to je minimalna širina kutije */     
   padding: 8px 10px;      /* 8px je gore-dole, a druga vrednost je levo-desno od teksta unutar stavke, sa 16px na 10px, svako dugme je postalo uže za 2*6=12px */
   font-size: clamp(0.9rem, 1.5vw, 1.05rem); 
   color: rgba(255, 255, 255, 0.75); /* Svetli, prigušeni tekst na tamnoj pozadini */
