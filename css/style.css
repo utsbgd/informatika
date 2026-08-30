@@ -89,7 +89,7 @@ nav ul li a {
 
 /* efekat kada se na stavku menija pokaze misem */
 nav ul li a:hover {
-  /* background-color: #3b2f8a; */tamno plava
+  /* background-color: #3b2f8a; */
   background-color: #4c3eb2;
 }
 
