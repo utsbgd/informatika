@@ -80,7 +80,7 @@ nav ul li a {
   min-width: 100px;       /* manja minimalna širina */
   padding: 6px 10px;      /* smanjen padding */
   font-size: clamp(0.95rem, 1.8vw, 1.1rem); /* manji font */
-  color: #e0e0e0; /* svetlo siva, uvek vidljiva */
+  color: #000;
   text-decoration: none;
   font-weight: 600;
   border-radius: 4px;
