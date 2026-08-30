@@ -35,23 +35,25 @@
 <section>
   <h2 style="color:#5040ae;">Упознавање ученика са наставним планом и програмом, начином рада и оцењивања</h2>  
   <!-- PDF embed - u okviru frejma prikazuje sadržaj pdf-fajla -->
-  <iframe src="pdfs/plan_nacin_rada_ishodi.pdf"
-          width="90%" height="700px"
+  <!-- PDF – prikaz na računaru -->
+  <iframe id="pdfFrame"
+          src="pdfs/plan_nacin_rada_ishodi.pdf"
+          width="90%"
+          height="700px"
           style="border:none;">
-  </iframe>  
-  <!-- Fallback link, skriven dok ne zatreba, prikazuje samo ako ne uspe da učita u frejm -->
-  <p id="pdfFallback" style="display:none;">
-    Vaš browser ne podržava prikaz PDF‑dokumenta u frejmu.
+  </iframe>
+  <!-- Link za telefone i browsere koji ne prikazuju PDF u okviru stranice -->
+  <div id="pdfMobileLink">
     <a href="pdfs/plan_nacin_rada_ishodi.pdf" target="_blank">
-      Kliknite ovde na link da otvorite fajl.
-    </a>.
-  </p>
+      📄 Отвори наставни план и начин рада
+    </a>
+  </div>
 </section>
 <script>
   // Provera da li iframe može da se učita
   document.getElementById('pdfFrame').addEventListener('error', function() {
-    document.getElementById('pdfFrame').style.display = 'none';
-    document.getElementById('pdfFallback').style.display = 'block';
+  document.getElementById('pdfFrame').style.display = 'none';
+  document.getElementById('pdfFallback').style.display = 'block';
   });
 </script>
     
