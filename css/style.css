@@ -79,25 +79,24 @@ nav ul {
 }
 
 nav ul li {  
-  margin: 4px 3px; /* Smanjeno sa 8px na 3px sa leve i desne strane, ušteda po 10px između svake dve stavke menija. */
+  margin: 4px 3px; /* kada se smanji 3px za 1px tada se smanji 1px*2 između svake dve stavke menija itd. */
 }
 
 nav ul li a {
   display: inline-block;
   text-align: center;
   min-width: 85px;  /* to je minimalna širina kutije */     
-  padding: 8px 10px;      /* 8px je gore-dole, a druga vrednost je levo-desno od teksta unutar stavke, sa 16px na 10px, svako dugme je postalo uže za 2*6=12px */
+  padding: 8px 10px;      /* 8px je gore-dole, a 10px je levo-desno od teksta unutar stavke, ako smanjim 1px tada je uže za 2*1px */
   font-size: clamp(0.9rem, 1.5vw, 1.05rem); 
   color: rgba(255, 255, 255, 0.75); /* Svetli, prigušeni tekst na tamnoj pozadini */
   text-decoration: none;
   font-weight: 500;       /* Moderniji, čistiji izgled slova */
   border-radius: 6px;     /* Prefinjeni zaobljeni uglovi */
-  position: relative;     /* Potrebno za pozicioniranje donje linije */
-  /* Profesionalna tranzicija: glatko menja boju pozadine i teksta */
-  transition: background-color 0.25s ease, color 0.25s ease; 
+  position: relative;     /* Potrebno za pozicioniranje donje linije */  
+  transition: background-color 0.25s ease, color 0.25s ease; /* tranzicija: glatko menja boju pozadine i teksta */
 }
 
-/* Efekat kada se na stavku menija pokaže mišem (Hover) */
+/* Efekat kada se na stavku menija pokaže mišem (hover) */
 nav ul li a:hover {
   background-color: #4c3eb2; /* Svetlija ljubičasta koju smo izabrali */
   color: #ffffff;            /* Tekst postaje potpuno beo za maksimalan kontrast */
@@ -106,7 +105,7 @@ nav ul li a:hover {
 /* Aktivna stavka menija (Trenutna stranica) */
 nav ul li a.active {
   color: #ffffff;            /* Tekst ostaje čisto beo */
-  background-color: rgba(255, 255, 255, 0.15); /* Prefinjena staklena pozadina */
+  background-color: rgba(255, 255, 255, 0.15); /* Prefinjena staklena pozadina, providnost 0.15 */
   font-weight: 600;          /* Blago podebljan tekst */
 }
 
@@ -118,11 +117,11 @@ nav ul li a.active::after {
   left: 15%;                 
   width: 70%;                /* Linija ne ide od ivice do ivice, što izgleda elegantnije */
   height: 3px;
-  background-color: #f1c40f; /* Vaša žuta boja, sada kao jasan svetleći akcenat */
+  background-color: #f1c40f; /* žuta boja */
   border-radius: 3px 3px 0 0;
 }
 
-/* 📱 Mobilni prikaz (Prilagođen novoj tamnoj pozadini) */
+/* 📱 Mobilni prikaz (Prilagođen tamnoj pozadini) */
 @media (max-width: 600px) {
   nav {
     padding: 5px 0;
@@ -141,7 +140,7 @@ nav ul li a.active::after {
   nav ul li a {
     display: block;
     min-width: 0;
-    padding: 10px;          /* Veća površina za prst na telefonu */
+    padding: 10px;          /* veća površina za prst na telefonu */
   }
   
   nav ul li a.active::after {
