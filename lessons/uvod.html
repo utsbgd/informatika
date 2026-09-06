@@ -5,6 +5,24 @@
   <title>Увод - рачунарство и информатика</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
+<script>
+function pdfLekcija(naslov, pdfPath) {
+  return `
+    <hr>
+    <section>
+      <h2>${naslov}</h2>
+      <!-- PDF – prikaz na računaru -->
+      <iframe src="${pdfPath}" width="90%" height="700px"></iframe>
+      <!-- Link za telefone i browsere koji ne prikazuju PDF -->
+      <div id="pdfMobileLink">
+        <a href="${pdfPath}" target="_blank" class="pdf-link">${naslov}</a>
+      </div>
+    </section>
+  `;
+}
+</script>
+  
 <body class="uvod">
   <nav>
     <ul>
@@ -21,29 +39,9 @@
     <h1>Увод и основни појмови</h1>
     <p>Рачунарство и информатика; Угоститељско-туристичка школа, Београд</p>
   </header>
-
+  
   <main>
-
   <hr>
-    <section>
-      <h2 style="color:#5040ae;">
-        ​Утицај рачунара на здравље и утицај на животну средину
-      </h2>
-         <!-- PDF – prikaz na računaru -->
-      <iframe id="pdfFrame"
-              src="../pdfs/uticaj_racunara_na_zdravlje.pdf"
-              width="90%"
-              height="700px"
-              style="border:none;">
-      </iframe>
-        <!-- Link za telefone i browsere koji ne prikazuju PDF u okviru stranice -->
-      <div id="pdfMobileLink">
-        <a href="../pdfs/uticaj_racunara_na_zdravlje.pdf" target="_blank">
-          📄 ​Утицај рачунара на здравље и утицај на животну средину
-        </a>
-      </div>
-    </section>
-    
     <section>
       <h2>Најава писмене провере знања...</h2>
       <p>Следеће лекције испод биће на писменој провери знања између 21. и 25. септембра 2026. године</p>
