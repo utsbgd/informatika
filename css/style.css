@@ -239,6 +239,6 @@ a.pptx-link::before { content: "📊 "; }
     transition: background-color 0.3s ease;
 }
 
-.lesson-link:hover {
+.button-link:hover {
     background-color: #89cff0;
 }
