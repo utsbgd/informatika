@@ -230,7 +230,7 @@ a.pptx-link::before { content: "📊 "; }
 } /* dovde je zbog prikaza PDF */
 
 /* Svi hiperlinkovi imaju pozadinu i hover */
-.lesson-link {
+.button-link {
     color: #005fa3;              /* tamno plava boja teksta */
     background-color: #e6e6ff;   /* blago plava pozadina */
     padding: 2px 6px;
