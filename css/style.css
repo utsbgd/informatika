@@ -228,20 +228,3 @@ a.pptx-link::before { content: "📊 "; }
     display: block;
   }
 } /* dovde je zbog prikaza PDF */
-
-/* stil za hiperlinkove tj. za <a> iz htmal-a, da izgledaju kao dugmad, da učenici lakše primete */
-a {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #007acc; /* плаво дугме */
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover fekat za te hiper linkove */
-a:hover {
-    background-color: #FF5fa3; /* тамнија нијанса */
-}
