@@ -47,14 +47,13 @@ function pdfLekcija(naslov, pdfPath) {
     </section>
 
         <hr>
-    <section>
-      <h2>Шта је софтвер?</h2>
-      <p>Софтвер је скуп програма који омогућавају да рачунар ради. Делимо га на системски, апликативни и програмски.</p>
-    </section>
+    <script>
+      document.write(pdfLekcija("Матична плоча (motherboard)", "../pdfs/struktura_racunara_-_hardver_i_softver.pdf"));
+    </script>
 
     <hr>
     <script>
-      document.write(pdfLekcija("Структура и принцип рада рачунара", "../pdfs/struktura_racunara_-_hardver_i_softver.pdf"));
+      document.write(pdfLekcija("Структура и принцип рада рачунара (hardware and software)", "../pdfs/struktura_racunara_-_hardver_i_softver.pdf"));
     </script>
 
   </main>
