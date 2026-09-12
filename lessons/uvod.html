@@ -25,50 +25,50 @@
   </header>
   
 <main>
-  <script>
-    document.write(pdfLekcija("Утицај рачунара на здравље и утицај на животну средину", "../pdfs/uticaj_racunara_na_zdravlje.pdf"));
-  </script>
-    
+  <div id="lekcija1"></div>
   <hr>
   <section>
       <h2>Најава писмене провере знања...</h2>
       <p>Следеће лекције, испод, биће на писменој провери знања која је планирана да буде између 21. и 25. септембра 2026. године.</p>
   </section>
-
   <hr>
-  <script>
-      document.write(pdfLekcija("Кодирање информација коришћењем бинарног бројног система, начини представљања података и дигитални запис података", "../pdfs/kodiranje-informacija-binarni-brojni-sistem.pdf"));
-  </script>
-      
+  <div id="lekcija2"></div>
   <hr>
-  <script>
-      document.write(pdfLekcija("Јединице за мерење количине информација, ​представљање разних типова информација", "../pdfs/јedinice-za-merenje-kolicine-informacije.pdf"));
-  </script>
-
+  <div id="lekcija3"></div>
   <hr>
-  <script>
-      document.write(pdfLekcija("ИКТ - информационо-комуникационе технологије", "../pdfs/it-ikt.pdf"));
-  </script>
-  
+  <div id="lekcija4"></div>
   <hr>
-  <script>
-      document.write(pdfLekcija("Информација, рачунарство и информатика, области рачунарства", "../pdfs/informacija-informatika-bezikt.pdf"));
-  </script>  
-    <section>
+  <div id="lekcija5"></div>
+  <section>
       <h3>Ову лекцију можете учити и методом програмираног учења</h3>
          <p> Отворите следећи линк и урадите лекцију до краја: <a href="https://openedu-platform.github.io/pr1/" target="_blank" class="button-link"> Увод у рачунарство и информатику </a>. </p>      
-    </section>  
-  
+  </section>  
   <hr>
-  <script>
-      document.write(pdfLekcija("Иницијални тест - није за оцену", "../pdfs/inicijalni_test_2026-27.pdf"));
-  </script>
-  
+  <div id="lekcija6"></div>
 </main>
 
   <footer>
     <p>&copy; аутор: Љубиша Цветић професор, 2026. Угоститељско-туристичка школа, Београд</p>
   </footer>
 
+  <script>
+    document.getElementById("lekcija1").innerHTML =
+      pdfLekcija("Утицај рачунара на здравље и утицај на животну средину", "../pdfs/uticaj_racunara_na_zdravlje.pdf");
+
+    document.getElementById("lekcija2").innerHTML =
+      pdfLekcija("Кодирање информација коришћењем бинарног бројног система...", "../pdfs/kodiranje-informacija-binarni-brojni-sistem.pdf");
+
+    document.getElementById("lekcija3").innerHTML =
+      pdfLekcija("Јединице за мерење количине информација...", "../pdfs/јedinice-za-merenje-kolicine-informacije.pdf");
+
+    document.getElementById("lekcija4").innerHTML =
+      pdfLekcija("ИКТ - информационо-комуникационе технологије", "../pdfs/it-ikt.pdf");
+
+    document.getElementById("lekcija5").innerHTML =
+      pdfLekcija("Информација, рачунарство и информатика, области рачунарства", "../pdfs/informacija-informatika-bezikt.pdf");
+
+    document.getElementById("lekcija6").innerHTML =
+      pdfLekcija("Иницијални тест - није за оцену", "../pdfs/inicijalni_test_2026-27.pdf");
+  </script>
 </body>
 </html>
