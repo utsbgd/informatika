@@ -25,3 +25,19 @@ function pdfLekcija(naslov, pdfPath) {
     </section>
   `;
 }
+
+function videoLekcija(naslov, videoUrl) {
+  return `
+    <hr>
+    <section>
+      <h2>${naslov}</h2>
+      <!-- Video – prikaz na računaru -->
+      <iframe src="${videoUrl}" width="90%" height="500px" frameborder="0" allowfullscreen></iframe>
+      <!-- Link za telefone i browsere koji ne prikazuju video u okviru stranice -->
+      <div id="pdfMobileLink">
+        <a href="${videoUrl}" target="_blank" class="pdf-link">${naslov}</a>
+      </div>
+    </section>
+  `;
+}
+
