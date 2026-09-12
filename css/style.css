@@ -51,10 +51,11 @@ header h1 {
 
   /* tanka crna bordura oko slova*/
   text-shadow:
-    -1px -1px 0 #444,
-     1px -1px 0 #444,
-    -1px  1px 0 #444,
-     1px  1px 0 #444;
+    -2px -2px 0 #f1c40f,  /* жута ивица горе-лево */
+     2px -2px 0 #f1c40f,  /* жута ивица горе-десно */
+    -2px  2px 0 #f1c40f,  /* жута ивица доле-лево */
+     2px  2px 0 #f1c40f,  /* жута ивица доле-десно */
+     0px  0px 5px rgba(0,0,0,0.6); /* благи црни сјај за контраст */
 }
 
 /* Tekst u headeru – drugi red */
