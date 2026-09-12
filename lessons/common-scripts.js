@@ -12,6 +12,16 @@ function slikaLekcija(naslov, imgPath, altText = "") {
   `;
 }
 
+function slikaIlustracija(naslov, imgPath, altText = "") {
+  return `
+    <section>
+      <h3 style="color:#555; font-weight:normal;">${naslov}</h3>
+      <img src="${imgPath}" alt="${altText}" style="max-width:80%; display:block; margin:10px auto; border:1px solid #ccc; padding:4px;">
+      <p style="text-align:center; font-size:0.9em; color:#666;">Илустрација уз лекцију</p>
+    </section>
+  `;
+}
+
 function pdfLekcija(naslov, pdfPath) {
   return `
     <section>
