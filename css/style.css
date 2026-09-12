@@ -280,9 +280,9 @@ a.pptx-link::before { content: "📊 "; }
 .programirano-slika img {
   max-width: 100%;          /* слика остаје унутар блока */
   height: auto;
-  border: 2px solid #336699;
+  border: 1px solid #336699;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* суптилнија сенка оквира слика */
   transition: transform 0.3s ease;
 }
 
