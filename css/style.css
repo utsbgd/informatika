@@ -198,7 +198,10 @@ footer {
 }
 
 /* Palete po oblastima */
-body.pocetna section { background-color: #ffffff; }
+/* body.pocetna section { background-color: #ffffff; } */
+body.pocetna section {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+}
 body.uvod section { background-color: #eaf6ff; }
 body.hardware section { background-color: #eafaf1; }
 body.obrada-teksta section { background-color: #fdecea; }
