@@ -260,31 +260,34 @@ a.pptx-link::before { content: "📊 "; }
 
 .programirano-ucenje {
   display: flex;
-  flex-wrap: wrap;       /* да се лепо прилагоди на мобилном */
-  align-items: center;
+  flex-wrap: wrap;          /* омогућава прелом на мобилном */
+  align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
+  max-width: 900px;         /* исто као твоје секције */
+  margin: 20px auto;
 }
 
-.programirano-tekst {
-  flex: 1 1 45%;         /* текст заузима око пола ширине */
+.programirano-tekst, .programirano-slika {
+  flex: 1 1 45%;            /* сваки блок узима око пола ширине */
+  max-width: 45%;           /* спречава ширење ван секције */
 }
 
 .programirano-slika {
-  flex: 1 1 45%;         /* слика заузима другу половину */
   text-align: center;
 }
 
 .programirano-slika img {
-  max-width: 100%;
-  border: 2px solid #336699; /* видљивији оквир */
+  max-width: 100%;          /* слика остаје унутар блока */
+  height: auto;
+  border: 2px solid #336699;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
 }
 
 .programirano-slika img:hover {
-  transform: scale(1.03); /* благи zoom ефекат на hover */
+  transform: scale(1.03);   /* благи zoom ефекат */
 }
 
 /* 📱 мобилни приказ */
@@ -294,7 +297,6 @@ a.pptx-link::before { content: "📊 "; }
     text-align: center;
   }
   .programirano-tekst, .programirano-slika {
-    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
-
