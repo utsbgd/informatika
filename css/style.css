@@ -9,7 +9,7 @@ body {
 
 /* Header – zajednički stil za sve oblasti */
 header {
-  margin-top: 70px; /* висина једнака висини менија */
+  margin-top: 80px; /* висина једнака висини менија */
   background-size: cover;
   background-position: center top;
   height: 160px;
