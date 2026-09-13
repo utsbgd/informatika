@@ -30,7 +30,7 @@ body.hardware header { background-image: url("../images/hardware-bg.jpg"); }
 body.obrada-teksta header { background-image: url("../images/obrada-teksta-bg.jpg"); }
 body.slajd-prezentacije header { background-image: url("../images/slajd-prezentacije-bg.jpg"); }
 body.tabelarne-kalkulacije header { background-image: url("../images/tabelarne-kalkulacije-bg.jpg"); }
-body.vestacka-inteligencija header { background-image: url("../images/uvod-bg.jpg"); }
+body.vestacka-inteligencija header { background-image: url("../images/vestacka-inteligencija-bg.jpg"); }
 
 /* Animacija pomera pozadinu gore–sredina–dole */
 @keyframes moveBackground {
