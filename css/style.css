@@ -9,6 +9,7 @@ body {
 
 /* Header – zajednički stil za sve oblasti */
 header {
+  margin-top: 70px; /* висина једнака висини менија */
   background-size: cover;
   background-position: center top;
   height: 160px;
@@ -81,10 +82,10 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1e1947; /* остаје твоја база */
+  background-color: #1e1947; /* Duboka tamno-ljubičasta */
   padding: 9px 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* сенка мало јача да се издвоји */
-  z-index: 1000; /* да буде изнад осталих елемената */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* сенка мало јача, испод менија, да се издвоји */
+  z-index: 1000; /* да буде мени изнад осталих елемената */
 }
 
 nav ul {
