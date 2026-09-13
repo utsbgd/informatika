@@ -11,7 +11,7 @@ body {
 header {
   background-size: cover;
   background-position: center top;
-  height: 140px;
+  height: 150px;
   position: relative;
   overflow: hidden;
   animation: moveBackground 30s ease-in-out infinite;
@@ -43,7 +43,8 @@ body.vestacka-inteligencija header { background-image: url("../images/vestacka-i
 /* Tekst u headeru – statičan svuda */
 header h1 {
   margin: 0;
-  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  /* font-size: clamp(2rem, 3.5vw, 2.6rem); */
+  font-size: clamp(2.4rem, 4vw, 3rem);
   line-height: 1.1;
   color: #fff;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
