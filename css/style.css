@@ -241,10 +241,9 @@ a.pptx-link::before { content: "📊 "; }
   background-color: #4c3eb2;
 }
 
-/* Mobilni prikaz PDF-a */
+/* Mobilni prikaz PDF-a, kasnije u HTML-u biće: <iframe class="pdfFrame" ...> </iframe> */
 @media (max-width: 600px) {
-
-  iframe {
+  .pdfFrame {
     display: none;
   }
 
