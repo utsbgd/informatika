@@ -256,13 +256,11 @@ a.pptx-link::before { content: "📊 "; }
 
 /* Mobilni prikaz PDF-a, kasnije u HTML-u biće: <iframe class="pdfFrame" ...> </iframe> */
 @media (max-width: 600px) {
-  .pdfFrame {
+  .pdfFrame,
+  .videoFrame {
     display: none;
   }
-
-  .contentMobileLink {
-    display: block;
-  }
+  .contentMobileLink { display: block; }
 } /* dovde je zbog prikaza PDF */
 
 /* Svi hiperlinkovi imaju pozadinu i hover */
