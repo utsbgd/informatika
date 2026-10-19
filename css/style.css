@@ -184,6 +184,19 @@ section h2 {
 section p {
   margin-bottom: 10px;
 }
+section h3 {
+  color: #336699;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+section ul,
+section ol {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+section li {
+  margin-bottom: 6px;
+}
 
 /* PDF okvir centriran */
 iframe {
