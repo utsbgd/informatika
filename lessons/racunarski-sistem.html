@@ -25,9 +25,10 @@
   </header>
 
   <main>
+    <div id="content"></div>
     <script>
       (async () => {
-        content.innerHTML = await htmlLekcija("htmllessons/graficki_interfejs_os.html");
+        document.getElementById("content").innerHTML = await htmlLekcija("htmllessons/graficki_interfejs_os.html");
       })();
     </script>
     
