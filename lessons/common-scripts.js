@@ -30,7 +30,7 @@ function slikaIlustracija(naslov, imgPath, altText = "", velicina = 100) {
   const sirina = 80 * (velicina / 100);
   return `
     <section>
-      <h3 style="color:#555; font-weight:normal;">${naslov}</h3>
+      <h3 class="illustrationTitle">${naslov}</h3>
       <img src="${imgPath}" alt="${altText}" class="illustrationImage" style="max-width:${sirina}%">
       <p style="text-align:center; font-size:0.9em; color:#666;">
         Илустрација уз лекцију
