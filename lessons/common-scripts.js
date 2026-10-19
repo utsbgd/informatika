@@ -1,9 +1,15 @@
 async function htmlLekcija(putanja) {
-    const response = await fetch(putanja);
-    if (!response.ok) {
+    try {
+        const response = await fetch(putanja);
+        if (!response.ok) {
+            console.error("Грешка:", putanja);
+            return "<p>Грешка при учитавању лекције.</p>";
+        }
+        return await response.text();
+    } catch (err) {
+        console.error(err);
         return "<p>Грешка при учитавању лекције.</p>";
     }
-    return await response.text();
 }
 
 function slikaLekcija(naslov, imgPath, altText = "") {
