@@ -327,4 +327,3 @@ a.video-link::before { content: "🎬 "; }
 a.image-link::before { content: "🖼️ "; } 
 a.pdf-link::before { content: "📄 "; }
 a.pptx-link::before { content: "📊 "; }
-a.video-link::before { content: "🎬 "; }
