@@ -1,12 +1,9 @@
-async function htmlLekcija(naslov, putanja) {
+async function htmlLekcija(putanja) {
     const response = await fetch(putanja);
-    const html = await response.text();
-    return `
-        <section>
-            <h2>${naslov}</h2>
-            ${html}
-        </section>
-    `;
+    if (!response.ok) {
+        return "<p>Грешка при учитавању лекције.</p>";
+    }
+    return await response.text();
 }
 
 function slikaLekcija(naslov, imgPath, altText = "") {
