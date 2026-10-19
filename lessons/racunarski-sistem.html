@@ -26,7 +26,9 @@
 
   <main>
     <script>
-      content.innerHTML = await htmlLekcija("lessons/htmllessons/graficki_interfejs_os.html");
+      (async () => {
+        content.innerHTML = await htmlLekcija("lessons/htmllessons/graficki_interfejs_os.html");
+      })();
     </script>
     
     <hr>
