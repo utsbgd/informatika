@@ -32,9 +32,7 @@ function slikaIlustracija(naslov, imgPath, altText = "", velicina = 100) {
     <section>
       <h3 class="illustrationTitle">${naslov}</h3>
       <img src="${imgPath}" alt="${altText}" class="illustrationImage" style="max-width:${sirina}%">
-      <p style="text-align:center; font-size:0.9em; color:#666;">
-        Илустрација уз лекцију
-      </p>
+      <p class="illustrationCaption"> Илустрација уз лекцију </p>
     </section>
   `;
 }
