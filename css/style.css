@@ -321,6 +321,7 @@ a.pptx-link::before { content: "📊 "; }
 
 .lessonImage { max-width: 90%; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
 .illustrationImage { display: block; margin: 10px auto; border: 2px solid #336699; padding: 4px; }
+.illustrationTitle { color: #555; font-weight: normal; }
 a.video-link::before { content: "🎬 "; }
 a.image-link::before { content: "🖼️ "; } 
 a.pdf-link::before { content: "📄 "; }
