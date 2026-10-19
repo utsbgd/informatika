@@ -1,3 +1,14 @@
+async function htmlLekcija(naslov, putanja) {
+    const response = await fetch(putanja);
+    const html = await response.text();
+    return `
+        <section>
+            <h2>${naslov}</h2>
+            ${html}
+        </section>
+    `;
+}
+
 function slikaLekcija(naslov, imgPath, altText = "") {
   return `
     <section>
