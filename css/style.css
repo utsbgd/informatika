@@ -324,4 +324,12 @@ a.pptx-link::before { content: "📊 "; }
     padding: 4px;
   }
   
+  a.video-link::before { 
+    content: "🎬 "; 
+  }
+
+  a.image-link::before { 
+    content: "🖼️ "; 
+  }  
+  
 }
