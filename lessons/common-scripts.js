@@ -19,8 +19,8 @@ function slikaLekcija(naslov, imgPath, altText = "") {
       <!-- Слика – приказ на рачунару -->
       <img src="${imgPath}" alt="${altText}" style="max-width:90%; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.2); display:block; margin:0 auto;">
       <!-- Линк за телефоне и преглед у новом прозору -->
-      <div class="pdfMobileLink">
-        <a href="${imgPath}" target="_blank" class="pdf-link">${naslov}</a>
+      <div class="mobileLink">
+          <a href="${imgPath}" target="_blank" class="image-link">${naslov}</a>
       </div>
     </section>
   `;
