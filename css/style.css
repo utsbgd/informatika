@@ -228,14 +228,13 @@ body.slajd-prezentacije section { background-color: #fffbe6; }
 body.tabelarne-kalkulacije section { background-color: #e6f7ff; }
 body.vestacka-inteligencija section { background-color: #f0e6ff; }
 
-/* ovo je zbog prikaza PDF na mobilnim uređajima, link – podrazumevano skriven na računaru */
-.contentMobileLink {
-  display: none;
+/* PDF link  na mobilnim uređajima*/
+.pdfMobileLink {
   text-align: center;
   margin: 20px 0;
 }
 
-.contentMobileLink a {
+.pdfMobileLink a {
   display: inline-block;
   padding: 12px 20px;
   background-color: #5040ae;
@@ -246,18 +245,43 @@ body.vestacka-inteligencija section { background-color: #f0e6ff; }
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-.contentMobileLink a:hover {
+.pdfMobileLink a:hover {
   background-color: #4c3eb2;
 }
 
-/* Mobilni prikaz PDF i video sadržaja */
+/* Video link  na mobilnim uređajima*/
+.videoMobileLink {
+  display: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.videoMobileLink a {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #5040ae;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.videoMobileLink a:hover {
+  background-color: #4c3eb2;
+}
+
+/* Slika link  na mobilnim uređajima*/
+.imageMobileLink {
+  display: none;
+}
+
+/* Mobilni prikaz slika i video sadržaja */
 @media (max-width: 600px) {
-  .pdfFrame,
-  .videoFrame {
-    display: none;
-  }
-  .contentMobileLink { display: block; }
-} /* dovde je zbog prikaza PDF i videa */
+  .videoFrame { display: none; }
+  .videoMobileLink { display: block; }
+  .imageMobileLink { display: block; }
+} /* dovde je zbog prikaza slika i videa */
 
 /* Svi hiperlinkovi imaju pozadinu i hover */
 .button-link {
