@@ -251,7 +251,7 @@ body.vestacka-inteligencija section { background-color: #f0e6ff; }
 }
 
 /* Mobilni prikaz PDF i video sadržaja */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .pdfFrame,
   .videoFrame {
     display: none;
