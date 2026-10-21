@@ -41,7 +41,7 @@ function pdfLekcija(naslov, pdfPath) {
   return `
     <section>
       <h2>${naslov}</h2>
-      <iframe class="pdfFrame" src="${pdfPath}" width="90%" height="700px"></iframe>
+      <iframe class="pdfFrame" src="${pdfPath}" width="90%" height="600px"></iframe>
       <div class="pdfMobileLink">
           <a href="${pdfPath}" target="_blank" class="pdf-link">Отвори PDF документ</a>
       </div>
