@@ -212,6 +212,11 @@ iframe {
   height: 650px;
 }
 
+.videoFrame {
+  width: 90%;
+  height: 500px;
+}
+
 /* Footer */
 footer {
   text-align: center;
