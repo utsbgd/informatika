@@ -19,7 +19,7 @@ function slikaLekcija(naslov, imgPath, altText = "") {
       <!-- Слика – приказ на рачунару -->
       <img src="${imgPath}" alt="${altText}" class="lessonImage">
       <!-- Линк за телефоне и преглед у новом прозору -->
-      <div class="contentMobileLink">
+      <div class="imageMobileLink">
           <a href="${imgPath}" target="_blank" class="image-link">${naslov}</a>
       </div>
     </section>
@@ -57,7 +57,7 @@ function videoLekcija(naslov, videoUrl) {
       <!-- Video – prikaz na računaru -->
       <iframe class="videoFrame" src="${videoUrl}" width="90%" height="500px" frameborder="0" allowfullscreen></iframe>
       <!-- Link za telefone i browsere koji ne prikazuju video u okviru stranice -->
-      <div class="contentMobileLink">
+      <div class="videoMobileLink">
         <a href="${videoUrl}" target="_blank" class="video-link">${naslov}</a>
       </div>
     </section>
