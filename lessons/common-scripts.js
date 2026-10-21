@@ -55,7 +55,7 @@ function videoLekcija(naslov, videoUrl) {
     <section>
       <h2>${naslov}</h2>
       <!-- Video – prikaz na računaru -->
-      <iframe class="videoFrame" src="${videoUrl}" width="90%" height="500px" frameborder="0" allowfullscreen></iframe>
+      <iframe class="videoFrame" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
       <!-- Link za telefone i browsere koji ne prikazuju video u okviru stranice -->
       <div class="videoMobileLink">
         <a href="${videoUrl}" target="_blank" class="video-link">${naslov}</a>
