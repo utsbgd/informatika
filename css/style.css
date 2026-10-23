@@ -221,11 +221,11 @@ iframe {
 footer {
   text-align: center;
   padding: 18px;
-  background: linear-gradient(135deg, #1e1947 0%, #5040ae 100%);
-  color: #f8f8f8;
+  background-color: #1e1947;
+  color: #dfe7ff;
   font-size: 0.9em;
+  border-top: 3px solid #f1c40f;
 }
-
 
 /* Palete po oblastima */
 /* body.pocetna section { background-color: #ffffff; } */
