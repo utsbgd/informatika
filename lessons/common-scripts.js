@@ -51,7 +51,6 @@ function pdfLekcija(naslov, pdfPath) {
 
 function videoLekcija(naslov, videoUrl) {
   return `
-    <hr>
     <section>
       <h2>${naslov}</h2>
       <!-- Video – prikaz na računaru -->
