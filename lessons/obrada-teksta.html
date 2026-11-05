@@ -27,13 +27,15 @@
   <main>
     <script>
       document.write(pdfLekcija("Обрада текста - рад са табелама у програму за обраду текста (основни појмови, примери примене у угоститељству и туризму)", "../pdfs/tabele-uvod-primeri.pdf")); 
+    </script>
+    <section id="tabeleprognastava"></section>
+      <script>
+        (async () => { document.getElementById("tabeleprognastava").innerHTML = await htmlLekcija("htmllessons/tabele-programir-nastava.html");})();
+      </script>
+    <script>
       document.write(pdfLekcija("Практична вежба (рад са табелама) <br>У прoграму WPS Office Writer урадите следећу вежбу:", "../pdfs/vezba_tabela-karta_pica.pdf")); 
       document.write(slikaIlustracija("Мапа ума - рад са табелама у програму WPS Office Writer", "../images/mapa_uma-tabele_wps_office_writer.jpg", "Слика није учитана: mapa_uma-tabele_wps_office_writer.jpg", 115));
       document.write(pdfLekcija("Практична вежба (рад са табелама) <br>У приграму WPS Office Writer урадите следећу вежбу:", "../pdfs/tabele_u_programu_writer.pdf"));
-    </script>
-    <section id="pripremawriter"></section>
-    <script>
-      (async () => { document.getElementById("pripremawriter").innerHTML = await htmlLekcija("htmllessons/writer_test_priprema.html");})();
     </script>
  
     <hr>
