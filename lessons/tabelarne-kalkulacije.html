@@ -31,7 +31,11 @@
     <script>
       document.write(pdfLekcija("Табеларне калкулације - Форматизовање и аутоматски унос података (WPS Office Spreadsheets)", "../pdfs/formatizovanje_i_automatski_unos_podataka-uputstvo.pdf")); 
     </script>
-    
+    <section id="automunos"></section>
+      <script>
+        (async () => { document.getElementById("automunos").innerHTML = await htmlLekcija("htmllessons/sheets-automatskiunos.html");})();
+      </script>
+       
     <hr>
     <script>
       document.write(pdfLekcija("Табеларне калкулације - Кретање по радном листу, унос података, селектовање (WPS Office Spreadsheets)", "../pdfs/unos_podataka_selektovanje_kretanje.pdf")); 
