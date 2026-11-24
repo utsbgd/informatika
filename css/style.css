@@ -356,3 +356,12 @@ a.video-link::before { content: "🎬 "; }
 a.image-link::before { content: "🖼️ "; } 
 a.pdf-link::before { content: "📄 "; }
 a.pptx-link::before { content: "📊 "; }
+
+/* приказ табела */
+table {width: 100%; border-collapse: collapse; margin: 1rem 0; background-color: #ffffff;}
+th {background-color: #005a9c; color: white; padding: 12px; text-align: left;}
+td {padding: 10px 12px; border: 1px solid #d0d7de; vertical-align: top;}
+tr:nth-child(even) {background-color: #f6f8fa;}
+tr:hover {background-color: #eef6ff;}
+code {font-weight: bold; color: #b00020; background-color: #f3f4f6; padding: 2px 5px; border-radius: 4px; white-space: nowrap;}
+
