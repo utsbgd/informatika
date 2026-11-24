@@ -27,8 +27,11 @@
   <main>
     <script>
       document.write(pdfLekcija("Табеларне калкулације - Елементарне функције (SUM, AVERAGE, MAX, MIN, COUNT)", "../pdfs/elementarne-funkcije_vezba_sa_uputstvom.pdf")); 
-      document.write(slikaIlustracija("Примери и објашњења елементарних функција за табеларне калкулације", "../images/wps-writer-interface-guide.jpg", "Слика није учитана: wps-writer-interface-guide.jpg", 115));
     </script>
+    <section id="primerielfunkcija"></section>
+      <script>
+        (async () => { document.getElementById("primerielfunkcija").innerHTML = await htmlLekcija("primeri-elementarnih-funkcija.html");})();
+      </script>
     
     <hr>  
     <script>
