@@ -365,3 +365,13 @@ tr:nth-child(even) {background-color: #f6f8fa;}
 tr:hover {background-color: #eef6ff;}
 code {font-weight: bold; color: #b00020; background-color: #f3f4f6; padding: 2px 5px; border-radius: 4px; white-space: nowrap;}
 
+/* приказ табела прилагођен мобилним уређајима*/
+.table-responsive {overflow-x: auto; margin: 1rem 0;}
+.table-responsive table {width: 100%; border-collapse: collapse; background: #fff; min-width: 450px;}
+.table-responsive th {background: #0078d4; color: #fff; padding: 12px; text-align: left;}
+.table-responsive td {padding: 10px 12px; border: 1px solid #d9d9d9; vertical-align: top;}
+.table-responsive tbody tr:nth-child(even) {background: #f8fafc;}
+.table-responsive tbody tr:hover {background: #eef6ff;}
+.table-responsive code {font-family: Consolas, Monaco, monospace; font-weight: bold; color: #c7254e; background: #f4f4f4; padding: 2px 6px; border-radius: 4px;}
+@media (max-width: 768px) {.table-responsive th, .table-responsive td {padding: 8px; font-size: 0.95rem;}}
+
