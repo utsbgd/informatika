@@ -1,0 +1,76 @@
+<h2>Вештачка интелигенција (AI) - <em>Teachable Machine</em> - тренирање вештачке интелигенције</h2>
+
+<p>
+    <strong>Teachable Machine</strong> је бесплатан алат компаније Google помоћу којег учимо
+    вештачку интелигенцију да препознаје објекте, слике, звукове или покрете на основу примера које јој покажемо.
+    На пример, ако AI покажемо много слика јабука, крушака и банана, она ће научити да препозна
+    којој групи припада нова слика коју раније није видела.
+</p>
+
+<ol>
+    <li>
+        Преузмите <strong>fotografije-cveca.zip</strong> (за рад од куће). То су фолдери са сликама
+        (лале, руже, сунцокрети и тест-слике) за тренирање и тестирање вештачке интелигенције.
+        На часу у школи питајте наставника: „Да ли је фајл већ преузет и где се налази?“
+    </li>
+
+    <li>
+        Идите на сајт:
+        <a href="https://teachablemachine.withgoogle.com/" target="_blank">
+            https://teachablemachine.withgoogle.com/
+        </a>
+    </li>
+
+    <li>
+        Изаберите <strong>Get Started</strong>, затим <strong>Image Project</strong>,
+        па <strong>Standard Image Model</strong>.
+    </li>
+
+    <li>
+        Промените називе класа:
+        <ul>
+            <li><strong>Class 1</strong> → <strong>lale</strong></li>
+            <li><strong>Class 2</strong> → <strong>ruže</strong></li>
+            <li>Додајте трећу класу <strong>suncokreti</strong></li>
+        </ul>
+    </li>
+
+    <li>
+        У класи <strong>lale</strong> кликните на <strong>Upload</strong>, затим на
+        <strong>Choose Images from your files</strong>. Отворите фолдер са сликама лала,
+        изаберите све слике (Ctrl+A) и кликните на <strong>Open</strong>.
+    </li>
+
+    <li>
+        На исти начин урадите <strong>Upload</strong> за руже и сунцокрете.
+    </li>
+
+    <li>
+        Кликните на <strong>Train Model</strong> да покренете тренирање модела.
+        Током тренинга немојте мењати табове нити кликтати било где на страници.
+    </li>
+
+    <li>
+        Изаберите <strong>File</strong> уместо <strong>Webcam</strong>.
+        На десној страни екрана опција <strong>Input</strong> треба да буде <strong>ON</strong>.
+    </li>
+
+    <li>
+        Кликните на <strong>Choose Images from your files</strong>, отворите фолдер
+        <strong>Test-slike</strong> и изаберите неку тест слику.
+        Модел ће проценити о којој врсти цвећа је реч.
+    </li>
+</ol>
+
+<p>
+    Приметићете да модел приказује колика је вероватноћа да је на слици лала, ружа или сунцокрет.
+    Понекад не погоди. Са већим бројем слика добија се боље утрениран модел и прецизнији резултати.
+    Са превише слика понекад може доћи до пада квалитета препознавања јер модел почиње да уочава
+    и мање важне детаље.
+</p>
+
+<h3>Материјал за рад</h3>
+
+<p>
+  <a href="fotografije-cveca.zip" download>Преузми датотеку fotografije-cveca.zip</a>
+</p>
