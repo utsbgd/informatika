@@ -27,7 +27,11 @@
   <main>
     <script>
       document.write(pdfLekcija("Табеларне калкулације <br>- Aпсолутне адресе, eлементарне формуле и функције (вежбање)", "../pdfs/tabela-PEKARA-nacin_rada.pdf")); 
-    </script>
+    </script>    
+    <section id="tabelapekara"></section>
+      <script>
+        (async () => { document.getElementById("tabelapekara").innerHTML = await htmlLekcija("htmllessons/tabelapekara.html");})();
+      </script>
  
     <hr>     
     <section id="flefjesqrtabsround"></section>
