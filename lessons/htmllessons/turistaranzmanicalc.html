@@ -1,24 +1,84 @@
 <section class="vezba-kalkulacije">
-  <div class="vezba-header">
-    <h2>Табеларне калкулације <br>- Примена у туризму - Туристички аранжмани (маржа, PDV)</h2>
-    <h3>ПРАКТИЧНА ВЕЖБА у програму WPS Office Spreadsheets.</h3>
-  </div>
-  <div class="vezba-download">
-    <div class="download-text">
-      <span> - Преузмите и сачувајте фајл (вежбу) у свој фолдер "tabelarne kalkulacije". <br>
-        - Отворите тај документ у програму WPS Office Spreadsheets.</span>
+    <div class="vezba-header">
+        <h2>
+            Табеларне калкулације
+            <br>
+            Примена у туризму - Формирање цене туристичког аранжмана
+        </h2>
+
+        <h3>
+            ПРАКТИЧНА ВЕЖБА У ПРОГРАМУ WPS Office Spreadsheets
+        </h3>
     </div>
-    Преузмите вежбу: <a class="download-button" href="../materijali/turisticki-aranzmani-marza-pdv.xlsx" download>⬇ turisticki-aranzmani-marza-pdv.xlsx</a>
-  </div>
-  <h3>Упутство за рад: </h3>
+
+    <div class="vezba-download">
+        <div class="download-text">
+            <span>
+                - Преузмите и сачувајте фајл у фасциклу
+                <strong>"Табеларне калкулације"</strong>.
+                <br>
+                - Отворите документ у програму
+                <strong>WPS Office Spreadsheets</strong>.
+            </span>
+        </div>
+
+        Преузмите вежбу:
+        <a class="download-button"
+           href="../materijali/turisticki-aranzmani-kalkulacija-cene.xlsx"
+           download>
+           ⬇ turisticki-aranzmani-kalkulacija-cene.xlsx
+        </a>
+    </div>
+
+    <h3>Упутство за рад:</h3>
+
     <ol>
-        <li>Преузмите, сачувајте и отворите фајл turisticki-aranzmani-marza-pdv.xlsx у програму <strong>WPS Office Spreadsheets</strong>.</li>
-        <li>Израчунајте цену аранжмана са маржом. <br>Формула за <strong>G2</strong>: <code>=E2+E2*F2</code> </li>
-        <li>Израчунајте укупне трошкове за све путнике. <br>Формула за <strong>I2</strong>: <code>=G2*H2</code> </li>
-        <li>Израчунајте укупне трошкове са ПДВ-ом. <br>Формула за <strong>J2</strong>: <code>=I2+I2*$L$2</code> </li>
-        <li>Копирајте формуле из реда 2 у редове 3–6 помоћу ручице за попуњавање (Fill Handle). </li>
-        <li>У редовима „УКУПНО“, „ПРОСЕК“, „МАКСИМУМ“ и „МИНИМУМ“ употребите функције: <code>SUM</code>, <code>AVERAGE</code>, <code>MAX</code> и <code>MIN</code>. </li>
-        <li>Сачувајте решену табелу.</li>
+
+        <li>
+            Преузмите и отворите датотеку <strong>turisticki-aranzmani-kalkulacija-cene.xlsx</strong>.
+        </li>
+
+        <li>
+            Израчунајте продајну цену аранжмана додавањем марже на набавну цену.
+            <br>
+            Формула за <strong>F2</strong>:
+            <code>=D2+D2*E2</code>
+        </li>
+
+        <li>
+            Израчунајте коначну цену аранжмана са ПДВ-ом.
+            <br>
+            Формула за <strong>G2</strong>:
+            <code>=F2+F2*$J$2</code>
+        </li>
+
+        <li>
+            Копирајте формуле у све преостале редове табеле коришћењем ручице за попуњавање (Fill Handle).
+        </li>
+
+        <li>
+            У редовима <strong>УКУПНО</strong>,
+            <strong>ПРОСЕК</strong>,
+            <strong>МАКСИМУМ</strong> и
+            <strong>МИНИМУМ</strong>
+            примените одговарајуће функције:
+            <code>SUM</code>,
+            <code>AVERAGE</code>,
+            <code>MAX</code> и
+            <code>MIN</code>.
+        </li>
+
+        <li>
+            Сачувајте решену табелу.
+        </li>
+
     </ol>
-    <p><strong>Напомена:</strong> У формули за ПДВ користите апсолутну адресу <code>$L$2</code>.</p>  
+
+    <p>
+        <strong>Напомена:</strong>
+        У формули за обрачун ПДВ-а користите апсолутну адресу
+        <code>$J$2</code>
+        како би се приликом копирања формуле увек користила иста стопа ПДВ-а.
+    </p>
+
 </section>
